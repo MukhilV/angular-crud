@@ -1,0 +1,26 @@
+<p>webseries works!</p>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SEASONS</th>
+            <th>EPISODES</th>
+            <th>RATING</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of webseries">
+            <th>{{item.id}}</th>
+            <th>{{item.name}}</th>
+            <th>{{item.seasons}}</th>
+            <th>{{item.episodes}}</th>
+            <th>{{item.rating}}</th>
+        </tr>
+    </tbody>
+
+</table>
+
+
