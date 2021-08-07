@@ -8,11 +8,13 @@ import { Employee } from './employee';
 })
 export class EmployeeService {
 
-  private getEmpURL="http://localhost:8081/api/v1/getEmployees";
-  private postEmpURL="http://localhost:8081/api/v1/addEmployee";
-  private getEmpByIdURL="http://localhost:8081/api/v1/getEmployee";
-  private updateEmpURL="http://localhost:8081/api/v1/updateEmployee";
-  private deleteEmpURL="http://localhost:8081/api/v1/deleteEmployee";
+  private getEmpURL="https://springboot-ems-crud.herokuapp.com/api/v1/getEmployees";
+  private postEmpURL="https://springboot-ems-crud.herokuapp.com/api/v1/addEmployee";
+  private getEmpByIdURL="https://springboot-ems-crud.herokuapp.com/api/v1/getEmployee";
+  private updateEmpURL="https://springboot-ems-crud.herokuapp.com/api/v1/updateEmployee";
+  private deleteEmpURL="https://springboot-ems-crud.herokuapp.com/api/v1/deleteEmployee";
+
+  private baseUrl="https://springboot-ems-crud.herokuapp.com";
   constructor(private httpClient:HttpClient) { }
 
   getEmployeesList():Observable<Employee[]>{
